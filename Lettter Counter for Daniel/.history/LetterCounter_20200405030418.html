@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <textarea id="input" placeholder="Wklej lub wpisz tekst tutaj Danielu, a następnie kliknij gdziekolwiek poza to okno." onchange="countLetters()"></textarea>
+        <script>
+
+            function countLetters() {
+                document.getElementById("letters").innerHTML = "";
+                const text = document.getElementById("input").value;
+                textLength = text.length;
+                var unorderedList = [...text].reduce((a, e) => { a[e] = a[e] ? a[e] + 1 : 1; return a }, {});
+                console.log(unorderedList); // {h: 1, e: 1, l: 2, o: 1}
+
+
+                const orderedList = {};
+                Object.keys(unorderedList).sort().forEach(function(key) {
+                    orderedList[key] = unorderedList[key];
+                });
+                console.log(orderedList);
+
+                var keys = Object.keys(orderedList);
+                var values = Object.values(orderedList);
+
+                var div = document.getElementById("letters");
+                var letters;
+
+                for(i=0; i < keys.length; i++){
+                    div.innerHTML += `${keys[i]} - ${values[i]} <br>`;
+                    letters += values[i];
+                }
+                div.innerHTML += `<br> ${letters} <br>`;
+            }
+
+        </script>
+        <div id="letters">
+
+        </div>
+    </body>
+</html>

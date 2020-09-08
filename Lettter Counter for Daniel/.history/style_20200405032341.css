@@ -1,0 +1,21 @@
+textarea {
+    width: 100%;
+    height: 400px;
+}
+
+body {
+    display: flex;
+    background-color: darkslategray;
+}
+
+#textarea {
+    margin: auto;
+    width: 60%;
+    height: 400px;
+}
+
+#letters {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}

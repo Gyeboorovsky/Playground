@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <textarea id="input" placeholder="Wklej lub wpisz tekst tutaj Danielu"></textarea>
+        <script>
+            console.log("test");
+            setInterval(getInput, 500);
+            function getInput(){
+                let text = document.getElementById("input").value;
+                console.log(text);
+            }
+        </script>
+    </body>
+</html>

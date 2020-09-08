@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <textarea id="input" placeholder="Wklej lub wpisz tekst tutaj Danielu, a następnie kliknij gdziekolwiek poza to okno." onchange="checkLetters()"></textarea>
+        <script>
+            console.log("test");
+            var text;
+            var textLength;
+            setInterval(getInput, 1000);
+            function getInput(){
+                text = document.getElementById("input").value;
+                textLength = text.length;
+            }
+
+            const numOfLetters = {
+                a: 0, aa: "a",
+                b: 0, bb: "b",
+                c: 0, cc: "v",
+                d: 0, dd: "d",
+                e: 0, ee: "e",
+                f: 0, ff: "f",
+                g: 0, gg: "g",
+                h: 0, hh: "h",
+                i: 0, ii: "i",
+                j: 0, jj: "j",
+                k: 0, kk: "k",
+                l: 0, ll: "l",
+                m: 0, mm: "m",
+                n: 0, nn: "n",
+                o: 0, oo: "o",
+                p: 0, pp: "p",
+                r: 0, rr: "r",
+                s: 0, dd: "d",
+                t: 0, tt: "t",
+                u: 0, uu: "u",
+                w: 0, ww: "w",
+                z: 0, zz: "z",
+            };
+            numOfLetters.a += 1;
+
+            function checkLetters() {
+                for (i = 0; i < textLength; i++) {
+                if(text[i] == )
+                }
+            }
+        </script>
+    </body>
+</html>

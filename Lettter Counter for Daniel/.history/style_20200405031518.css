@@ -1,0 +1,13 @@
+textarea {
+
+}
+
+body {
+    background-color: darkslategray;
+}
+
+#textarea {
+    margin: auto;
+    width: 60%;
+    height: 400px;
+}

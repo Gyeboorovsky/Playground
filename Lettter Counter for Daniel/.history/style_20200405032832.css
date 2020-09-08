@@ -1,0 +1,30 @@
+textarea {
+    width: 100%;
+    height: 400px;
+    font-size: 30px;
+    background-color: lightgrey;
+}
+
+body {
+    display: flex;
+    position: relative;
+    background-color: darkslategray;
+}
+
+#textarea {
+    position: absolute;
+    margin-left: 20%;
+    width: 60%;
+    height: 400px;
+}
+
+#letters {
+    position: absolute;
+    flex-direction: column;
+    color: lightgrey;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 600px;
+    width: 50px;
+}
